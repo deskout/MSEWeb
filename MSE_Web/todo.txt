@@ -3,3 +3,6 @@
 - Con las imagenes de los sponsors, cambiar los alt y title
 - Poner la exclamacion hacia arriba con codigo html
 - Cambiar la fuente
+- ¿Cuantos partidos se quieren ver a la vez? El resto va a scroll.
+	- O podemos hacer una especie de mini menu que cuando piques en un juego, te enseñe los partidos que tenemos de ese juego.
+	Lo veo bastante mas bonito y asi nos evitamos tener que poner el juego en el partido, porque no hay hueco.
