@@ -1,92 +1,299 @@
+/* ######################## */
+/* INICIO ESTILOS GENERALES */
+/* ######################## */
+
+* {
+	font-family: "Constantia", serif; 
+}
+
+html {
+	height: 100%;
+}
+
 div {
-    position: relative;
+	position: relative;
+    margin: 0 auto;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+a { 
+    text-align: center;
+    text-decoration: none;
+    color: white;    
+    font-size: x-large;
+}
+
+li {
+    display: inline;
 }
 
 body {
-    position: relative;
-    display: block;
-    float: left;
-    width: 100%;
-    height: 100vh;
+    min-width: 1200px;
     margin: 0px auto;
+    background-color: lime;
 }
 
+/* ##################### */
+/* FIN ESTILOS GENERALES */
+/* ##################### */
+
+/* ##################### */
+/* INICIO ESTILOS HEADER */
+/* ##################### */
+
 .header{
-    background-color: yellow;
+    background-color: white;
     height: 20%;
 }
 
-.header .logo{
-    width: 10%;
-    height: 100%;
-    float: left;
+.header .upSeparatorBarBlack{
+    max-height: 50px;
+    background-color: black;    
 }
 
-.header .logo img{
-    height: 100%;
-    display: block;
-    margin: auto;
+.header .upSeparatorBarYellow{
+    max-height: 50px;
+    background-color: yellow;
+    min-width: 100%;
 }
 
-.header .opciones{
-    width: 65%;
-    height: 100%;
-    float: left;
-    margin: 0;
-}
-
-.header .opciones .listaOpciones{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.header .opciones .listaOpciones>li{
-    float: left;
-    width: 20%;
-    height: 100%;
+.header .upSeparatorBarBlack .logo{
+    position: absolute;
+    z-index: 1000;
+    width: 150px;
+    margin-left: 5%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
-.header .opciones .listaOpciones .optHeader{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Constantia", serif;
-    font-size: x-large;
-}   
-
-.header .rrssheader{
-    width: 25%;
-    height: 100%;
-    float: left;
+.header .upSeparatorBarBlack .rrssheader {
+	width: 90%;
+	float: none;
+	margin: 0 auto;	
 }
 
-.header .rrssheader img{
+.header .upSeparatorBarBlack .rrssheader .rrssIMGs {
+	margin: 0;
+}
+
+.header .upSeparatorBarBlack .rrssheader .rrssIMGs img{
+    max-width: 50px;
+    float: right;
+    margin-right: 2px;	
+}
+
+.header .upSeparatorBarYellow .opciones{
+	width: 90%;
+	float: none;
+	max-height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.header .upSeparatorBarYellow .opciones .listaOpciones{
+    list-style: none;   
+    width: 100%;
     height: 100%;
-    width: 20%;
-    display: block;
-    margin: auto;
-    margin: 0;
-    padding: 0;
-    float: left;
+    text-align: right;
+    margin-right: 5em;
+}
+
+.header .upSeparatorBarYellow .opciones .listaOpciones>li{
+    width: 15%;
+    height: 100%;
+    margin-right: 3em;
+}
+
+/* ################## */
+/* FIN ESTILOS HEADER */
+/* ################## */
+
+
+/* ###################### */
+/* INICIO ESTILOS CONTENT */
+/* ###################### */
+
+.content > div {
+	width: 90%;
+	float: none;
 }
 
 .content {
-    background-color: black;
-    height: 2000px;
+    background-color: black;        
 }
 
-.sponsor {
-    background-color: blueviolet;
-    height: 30%;
+.content .slider {
+	background-color: blue;
+	min-height: 500px;	
+	margin-top: 50px;
 }
+
+.content .sponsors {
+	margin-top: 50px;
+}
+
+.content .sponsors .sponsor {
+	height: 180px; 
+	background-color: grey;
+    margin-top: 30px;    
+    padding-top: 10px;
+}
+
+.content .sponsors .sponsor .titleSponsor {
+    width: 50%;
+    height: 30px;
+    background-color: yellow;
+    float: none;
+}
+
+.content .sponsors .sponsor .titleSponsor p {
+	height: 100%;
+	display: flex;
+    justify-content: center;  
+    align-items: center;
+    margin: 0 auto;    
+}
+
+.content .sponsors .sponsor .contentSponsor{
+	height: 100px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;  
+	align-items: center;
+}
+
+.content .noticias {
+	background-color: red;	
+	margin-top: 80px;
+	float: left;
+	right: -5%;
+	text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+}
+
+.content .noticias .noticia {
+	display: inline-table;
+	padding: 15px;
+	width: 300px;
+	height: 300px;
+	background-color: yellow;	
+}
+
+.content .nextMatches {
+	margin-top: 80px;
+	float: left;
+	background-color: lime;
+	right: -5%;
+}
+
+.content .nextMatches .matchesTitle {
+
+}
+
+.content .nextMatches .match {
+	margin-bottom: 20px;	
+}
+
+.content .nextMatches .match>div {
+	height: 100px;
+}
+
+.content .nextMatches .match>div:not(:first-child) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.content .nextMatches .match .matchHour {
+	width: 10%;
+}
+
+.content .nextMatches .match .matchHour>p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content .nextMatches .match .matchTeam {
+	width: 25%;
+}
+
+.content .nextMatches .match .matchLogo {
+	width: 10%;
+}
+
+.content .nextMatches .match .matchVS {
+	width: 10%;
+}
+
+.content .nextMatches .match .matchTwitch {
+	width: 10%;
+}
+
+/* ################### */
+/* FIN ESTILOS CONTENT */
+/* ################### */
+
+
+/* ##################### */
+/* INICIO ESTILOS FOOTER */
+/* ##################### */
 
 .footer {
     background-color: yellow;
-    height: 30%;
+    height: 30%;    
+    position:absolute; 
+  	bottom: 0; 
+  	left: 0;
 }
+
+.footer .goMSE {
+    background-color: blueviolet;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: x-large;
+    height: 100px;
+}
+
+.footer .linksFooter {
+    height: 75px;    
+    background-color: blue;    
+    list-style: none;
+}
+
+.footer .linksFooter .legales {
+    height: 100%;    
+    width: 50%;        
+    align-items: center;
+    display: flex;     
+}
+
+.footer .linksFooter .linkFooter {
+    font-size: small;
+}
+
+.footer .linksFooter .copyright {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+.footer .linksFooter .copyright .anclaTop{
+	margin-right: 5em;	
+}
+
+
+/* ################## */
+/* FIN ESTILOS FOOTER */
+/* ################## */
