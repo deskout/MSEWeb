@@ -146,6 +146,7 @@ and open the template in the editor.
                     <button class="anclaTop">
                         <span class="icoTop"></span>
                     </button>
+                    <p>Maquetada y programada por Deskout.<br/>Diseñada por Cerro Graphics.</p>
                 </div>                
             </div>
         </div>
