@@ -1,3 +1,5 @@
 - Cambiar los enlaces del menu header. Poner el dominio.
 - Poner lo de la tienda y lo de aladina para acabar el content
 - Con las imagenes de los sponsors, cambiar los alt y title
+- Poner la exclamacion hacia arriba con codigo html
+- Cambiar la fuente
