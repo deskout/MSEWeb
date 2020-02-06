@@ -1,0 +1,19 @@
+Lista de la compra Cerro (Ancho X Alto)
+---------------------------------------
+- Fuente de las letras
+- Logos RRSS -> 50x50
+- Logos RRSS hover -> 50x50
+- Imagenes del slider principal -> 1215x500
+- Imagen Cerro Graphics -> 300x(el alto que quieras)
+- Imagen WebUp Hosting -> 300x(el alto que quieras)
+- Imagen Thunder -> 300x(el alto que quieras)
+- Imagen Gamesp  -> 300x(el alto que quieras)
+	- NOTA: Esos altos tienen que ser lo mismo. El que quieras, pero todos los logos con el mismo alto
+- Códigos de color:
+	1. Amarillo
+	2. Negro
+	3. Gris de los bloques
+- Imagen "Ver directo" -> 100x30
+- Imagen "Ver directo" hover -> 100x30
+- Imagen de visita nuestra tienda -> 1215x250
+- Imagen de Aladina -> 300x(el alto que quieras)
