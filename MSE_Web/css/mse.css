@@ -1,9 +1,9 @@
 /* ######################## */
 /* INICIO ESTILOS GENERALES */
 /* ######################## */
-
 * {
-	font-family: "Constantia", serif; 
+	font-family: "Constantia", serif;
+	box-sizing: border-box;
 }
 
 html {
@@ -12,27 +12,27 @@ html {
 
 div {
 	position: relative;
-    margin: 0 auto;
-    display: block;
-    float: left;
-    width: 100%;
+	margin: 0 auto;
+	display: block;
+	float: left;
+	width: 100%;
 }
 
-a { 
-    text-align: center;
-    text-decoration: none;
-    color: white;    
-    font-size: x-large;
+a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: x-large;
 }
 
 li {
-    display: inline;
+	display: inline;
 }
 
 body {
-    min-width: 1200px;
-    margin: 0px auto;
-    background-color: lime;
+	min-width: 1200px;
+	margin: 0px auto;
+	background-color: lime;
 }
 
 /* ##################### */
@@ -42,50 +42,49 @@ body {
 /* ##################### */
 /* INICIO ESTILOS HEADER */
 /* ##################### */
-
-.header{
-    background-color: white;
-    height: 20%;
+.header {
+	background-color: white;
+	height: 20%;
 }
 
-.header .upSeparatorBarBlack{
-    max-height: 50px;
-    background-color: black;    
+.header .upSeparatorBarBlack {
+	max-height: 50px;
+	background-color: black;
 }
 
-.header .upSeparatorBarYellow{
-    max-height: 50px;
-    background-color: yellow;
-    min-width: 100%;
+.header .upSeparatorBarYellow {
+	max-height: 50px;
+	background-color: yellow;
+	min-width: 100%;
 }
 
-.header .upSeparatorBarBlack .logo{
-    position: absolute;
-    z-index: 1000;
-    width: 150px;
-    margin-left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header .upSeparatorBarBlack .logo {
+	position: absolute;
+	z-index: 1000;
+	width: 150px;
+	margin-left: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header .upSeparatorBarBlack .rrssheader {
 	width: 90%;
 	float: none;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .header .upSeparatorBarBlack .rrssheader .rrssIMGs {
 	margin: 0;
 }
 
-.header .upSeparatorBarBlack .rrssheader .rrssIMGs img{
-    max-width: 50px;
-    float: right;
-    margin-right: 2px;	
+.header .upSeparatorBarBlack .rrssheader .rrssIMGs img {
+	max-width: 50px;
+	float: right;
+	margin-right: 2px;
 }
 
-.header .upSeparatorBarYellow .opciones{
+.header .upSeparatorBarYellow .opciones {
 	width: 90%;
 	float: none;
 	max-height: 50px;
@@ -93,42 +92,45 @@ body {
 	align-items: center;
 }
 
-.header .upSeparatorBarYellow .opciones .listaOpciones{
-    list-style: none;   
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    margin-right: 5em;
+.header .upSeparatorBarYellow .opciones .listaOpciones {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	margin-right: 5em;
 }
 
-.header .upSeparatorBarYellow .opciones .listaOpciones>li{
-    width: 15%;
-    height: 100%;
-    margin-right: 3em;
+.header .upSeparatorBarYellow .opciones .listaOpciones>li {
+	width: 15%;
+	height: 100%;
+	margin-right: 3em;
 }
 
 /* ################## */
 /* FIN ESTILOS HEADER */
 /* ################## */
 
-
 /* ###################### */
 /* INICIO ESTILOS CONTENT */
 /* ###################### */
-
-.content > div {
+.content>div {
 	width: 90%;
 	float: none;
 }
 
 .content {
-    background-color: black;        
+	background-color: black;
 }
 
 .content .slider {
 	background-color: blue;
-	min-height: 500px;	
+	min-height: 500px;
 	margin-top: 50px;
+}
+
+.slider img {
+	max-height: 500px; 
+	max-width: 1215px;
 }
 
 .content .sponsors {
@@ -136,45 +138,45 @@ body {
 }
 
 .content .sponsors .sponsor {
-	height: 180px; 
+	height: 180px;
 	background-color: grey;
-    margin-top: 30px;    
-    padding-top: 10px;
+	margin-top: 30px;
+	padding-top: 10px;
 }
 
 .content .sponsors .sponsor .titleSponsor {
-    width: 50%;
-    height: 30px;
-    background-color: yellow;
-    float: none;
+	width: 50%;
+	height: 30px;
+	background-color: yellow;
+	float: none;
 }
 
 .content .sponsors .sponsor .titleSponsor p {
 	height: 100%;
 	display: flex;
-    justify-content: center;  
-    align-items: center;
-    margin: 0 auto;    
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
-.content .sponsors .sponsor .contentSponsor{
+.content .sponsors .sponsor .contentSponsor {
 	height: 100px;
 	margin: 0 auto;
-    display: flex;
-    justify-content: center;  
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
 .content .noticias {
-	background-color: red;	
+	background-color: red;
 	margin-top: 80px;
 	float: left;
 	right: -5%;
 	text-align: center;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: 300px;
 }
 
 .content .noticias .noticia {
@@ -182,7 +184,7 @@ body {
 	padding: 15px;
 	width: 300px;
 	height: 300px;
-	background-color: yellow;	
+	background-color: yellow;
 }
 
 .content .nextMatches {
@@ -193,29 +195,28 @@ body {
 }
 
 .content .nextMatches .matchesTitle {
-
+	
 }
 
 .content .nextMatches .match {
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 .content .nextMatches .match>div {
 	height: 100px;
 }
 
-.content .nextMatches .match>div:not(:first-child) {
+.content .nextMatches .match>div:not (:first-child ) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-
 .content .nextMatches .match .matchHour {
 	width: 10%;
 }
 
-.content .nextMatches .match .matchHour>p{
+.content .nextMatches .match .matchHour>p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -237,68 +238,181 @@ body {
 	width: 10%;
 }
 
+.content .tienda {
+	background-color: yellow;
+	height: 300px;
+	float: left;
+	right: -5%;
+	margin-top: 80px;
+}
+
 /* ################### */
 /* FIN ESTILOS CONTENT */
 /* ################### */
 
-
 /* ##################### */
 /* INICIO ESTILOS FOOTER */
 /* ##################### */
-
 .footer {
-    background-color: yellow;
-    height: 30%;    
-    position:absolute; 
-  	bottom: 0; 
-  	left: 0;
+	background-color: yellow;
+	height: 30%;
 }
 
 .footer .goMSE {
-    background-color: blueviolet;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: x-large;
-    height: 100px;
+	background-color: blueviolet;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: x-large;
+	height: 100px;
 }
 
 .footer .linksFooter {
-    height: 75px;    
-    background-color: blue;    
-    list-style: none;
+	height: 75px;
+	background-color: blue;
+	list-style: none;
 }
 
 .footer .linksFooter .legales {
-    height: 100%;    
-    width: 50%;        
-    align-items: center;
-    display: flex;     
+	height: 100%;
+	width: 50%;
+	align-items: center;
+	display: flex;
 }
 
 .footer .linksFooter .linkFooter {
-    font-size: small;
+	font-size: small;
 }
 
 .footer .linksFooter .copyright {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;    
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-.footer .linksFooter .copyright p{
+.footer .linksFooter .copyright p {
 	font-size: 10px;
 	text-align: right;
 }
 
-.footer .linksFooter .copyright .anclaTop{
-	margin-right: 5em;	
+.footer .linksFooter .copyright .anclaTop {
+	margin-right: 5em;
 }
-
 
 /* ################## */
 /* FIN ESTILOS FOOTER */
 /* ################## */
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left: 0%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dots {
+	margin-top: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: yellow;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@
+-webkit-keyframes fade {
+	from {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+keyframes fade {
+	from {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+}
