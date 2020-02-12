@@ -206,7 +206,7 @@ body {
 	height: 100px;
 }
 
-.content .nextMatches .match>div:not (:first-child ) {
+.content .nextMatches .match>div:nth-child(n+2) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
